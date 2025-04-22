@@ -1,0 +1,86 @@
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Background Image */
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets//Products.jpeg") no-repeat center center/cover;
+    filter: brightness(40%); /* Dark overlay for text visibility */
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Content Styling */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  /* Gradient Heading */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+  }
+  
+  /* Subheading */
+  .hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+  }
+  
+  /* Shop Now Button */
+  .hero-button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1.5s;
+  }
+  
+  /* Button Hover Effect */
+  .hero-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 165, 0, 0.4);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

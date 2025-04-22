@@ -1,0 +1,96 @@
+/* Quick Actions Section */
+.quick-actions {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff8c00, #ff2d55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeSlide 1s ease-out;
+  }
+  
+  /* Subtitle */
+  .section-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  /* Action Cards Container */
+  .action-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Single Action Card */
+  .action-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Icon Styling */
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+  }
+  
+  /* Action Title */
+  .action-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Action Description */
+  .action-description {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Hover Effects */
+  .action-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Animations */
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .section-title { font-size: 2rem; }
+    .action-cards { flex-direction: column; align-items: center; }
+  }
+  

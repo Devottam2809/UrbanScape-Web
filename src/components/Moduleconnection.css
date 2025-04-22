@@ -1,0 +1,81 @@
+/* Main Section */
+.module-section {
+    text-align: center;
+    background: #181a1e; /* Dark theme */
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Title and Subtitle */
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff9f43;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #d3d3d3;
+  }
+  
+  /* Modules Animation */
+  .modules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .module {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    opacity: 0;
+    animation: moveIn 2s ease-out forwards;
+  }
+  
+  /* Unique Colors */
+  .module-1 { background: #ff5e5e; animation-delay: 0.3s; transform: translateX(-150vw); }
+  .module-2 { background: #ffb400; animation-delay: 0.5s; transform: translateY(-150vh); }
+  .module-3 { background: #3b50ff; animation-delay: 0.7s; transform: translateY(150vh); }
+  .module-4 { background: #2ecc71; animation-delay: 0.9s; transform: translateX(150vw); }
+  
+  /* Movement Animation */
+  @keyframes moveIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; transform: translateX(0) translateY(0); }
+  }
+  
+  /* Punchline Appears After Merge */
+  .punchline {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff9f43;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+  }
+  
+  /* Fade-In Effect */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Features List */
+  .features p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  

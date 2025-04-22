@@ -1,0 +1,99 @@
+.support-options {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Title Styling */
+  .support-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff8c00, #ff2d55);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .support-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+  }
+  
+  /* Grid Layout */
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Increased gap for better spacing */
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Support Cards */
+  .support-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px; /* Increased padding for better spacing */
+    text-align: left;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    min-height: 300px; /* Ensuring uniform card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .support-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* List Styling */
+  .support-card ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .support-card li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  /* Icons & Links */
+  .icon {
+    font-size: 1.3rem;
+    color: #ff8c00;
+  }
+  
+  a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .support-title {
+      font-size: 2rem;
+    }
+    
+    .support-grid {
+      gap: 20px; /* Adjust spacing for smaller screens */
+    }
+  
+    .support-card {
+      padding: 20px;
+      min-height: auto;
+    }
+  }
+  

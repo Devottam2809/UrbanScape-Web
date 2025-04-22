@@ -1,0 +1,137 @@
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Common Box Styles */
+  .signup-box {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeSlideIn 0.5s forwards;
+    border: 1px solid #dedede;
+  }
+  
+  /* Unique Animations for Signup Box */
+  .signup-box {
+    animation: fadeSlideIn 0.6s forwards, glowEffect 1.5s infinite alternate;
+  }
+  
+  /* Header Text */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #68c3a3, #34a853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    animation: textPop 1s ease-in-out;
+  }
+  
+  /* Input Fields */
+  input {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #34a853;
+    box-shadow: 0 0 10px rgba(52, 168, 83, 0.5);
+    outline: none;
+  }
+  
+  /* Buttons */
+  .btn-success {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #34a853, #68c3a3);
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(52, 168, 83, 0.5);
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: #34a853;
+  }
+  
+  /* Animations */
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes textPop {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glowEffect {
+    from {
+      box-shadow: 0 0 10px rgba(52, 168, 83, 0.5);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(52, 168, 83, 0.8);
+    }
+  }
+  
